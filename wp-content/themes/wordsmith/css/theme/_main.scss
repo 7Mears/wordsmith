@@ -1,0 +1,35 @@
+html, body { height: 100%; }
+
+body {
+  background: $background;
+}
+
+a,
+a:visited {
+  color: $linkColor;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $linkColor-hover;
+}
+
+// Content Wrapper
+.site-content,
+.site-footer,
+.wrap {
+  width: $wrap;
+  margin: 0 auto;
+}
+
+// Transitions
+a,
+.button {
+  transition: 0.4s ease;
+}
+
+// Clear dem floats
+
+.site-header {
+  @include clearfix();
+}

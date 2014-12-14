@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  box-sizing: border-box;
+  /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */ }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+html, body {
+  height: 100%; }
+
+footer,
+header,
+main,
+nav,
+section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #263238;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  line-height: 1.8; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 28px; }
+
+h5 {
+  font-size: 24px; }
+
+h6 {
+  font-size: 20px; }
+
+.button {
+  background: #687074;
+  color: #F2F3F8;
+  padding: 12.5px 25px;
+  border-radius: 10px; }
+  .button:hover {
+    background: #263238;
+    color: #FFF0A5; }
+
+.site-header {
+  width: 100%;
+  background: #263238;
+  color: #F2F3F8;
+  text-align: center; }
+  .site-header a,
+  .site-header a:visited {
+    color: #F2F3F8; }
+
+.main-navigation li {
+  display: inline-block;
+  margin: 25px; }
+
+.site-title {
+  font-size: 32px; }
+
+.site-description {
+  font-size: 20px;
+  margin: -12.5px 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #F2F3F8; }
+
+a,
+a:visited {
+  color: #384248;
+  text-decoration: none; }
+
+a:hover {
+  color: #FFF0A5; }
+
+.site-content,
+.site-footer,
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+a,
+.button {
+  transition: 0.4s ease; }
+
+.site-header {
+  content: "";
+  display: table; }
+
+/*# sourceMappingURL=style.css.map */

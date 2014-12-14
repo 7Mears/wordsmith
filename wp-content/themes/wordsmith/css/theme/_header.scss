@@ -1,0 +1,28 @@
+.site-header {
+  width: 100%;
+  background: $background-alt;
+  color: $textColor-alt;
+  text-align: center;
+
+  a,
+  a:visited {
+    color: $textColor-alt;
+  }
+
+}
+
+.main-navigation {
+
+  li {
+    display: inline-block;
+    margin: $pad;
+  }
+}
+
+.site-title {
+  font-size: 32px;
+}
+.site-description {
+  font-size: 20px;
+  margin: -($pad / 2) 0;
+}
