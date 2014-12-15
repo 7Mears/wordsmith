@@ -10,15 +10,18 @@ button,
 input,
 select,
 textarea {
-  color: $textColor;
   font-family: $font-main;
   font-size: $font-size;
   letter-spacing: $font-spacing;
   line-height: $font-line-height;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-main;
+  letter-spacing: $font-spacing;
+  line-height: $font-line-height;
+  $font-weight: 300;
 }
 
 h1 { font-size: 42px }

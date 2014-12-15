@@ -8,10 +8,8 @@
  */
 ?>
 
-	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info wrap">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wordsmith' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'wordsmith' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'wordsmith' ), 'Wordsmith', '<a href="http://www.endboss.ca" rel="designer">EndBoss</a>' ); ?>

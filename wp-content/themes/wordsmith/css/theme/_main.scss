@@ -1,7 +1,7 @@
-html, body { height: 100%; }
 
 body {
   background: $background;
+  color: $textColor;
 }
 
 a,
@@ -15,21 +15,13 @@ a:hover {
 }
 
 // Content Wrapper
-.site-content,
-.site-footer,
 .wrap {
-  width: $wrap;
+  width: $L;
   margin: 0 auto;
 }
 
 // Transitions
 a,
 .button {
-  transition: 0.4s ease;
-}
-
-// Clear dem floats
-
-.site-header {
-  @include clearfix();
+  @include transition(all 0.4s ease-in-out);
 }
