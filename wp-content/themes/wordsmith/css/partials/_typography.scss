@@ -14,14 +14,15 @@ textarea {
   font-size: $font-size;
   letter-spacing: $font-spacing;
   line-height: $font-line-height;
-  -webkit-font-smoothing: antialiased;
+  @include font-smoothing;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-main;
   letter-spacing: $font-spacing;
   line-height: $font-line-height;
-  $font-weight: 300;
+  font-weight: $font-weight;
+  @include font-smoothing;
 }
 
 h1 { font-size: 42px }

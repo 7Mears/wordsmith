@@ -56,12 +56,16 @@ textarea {
   font-size: 14px;
   letter-spacing: 1.3px;
   line-height: 1.8;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
   letter-spacing: 1.3px;
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1 {
   font-size: 42px; }
@@ -403,6 +407,9 @@ a,
   color: #F2F3F8; }
 
 .site-description {
+  background: url("/Wordsmith/wp-content/themes/wordsmith/images/lake.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   padding-top: 150px;
   padding-bottom: 100px; }

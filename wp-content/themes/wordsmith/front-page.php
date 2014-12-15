@@ -10,7 +10,7 @@ get_header(); ?>
 <section id="homeHero">
 
   <div class="homeHero">
-    <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+    <h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
   </div>
 
 </section>
