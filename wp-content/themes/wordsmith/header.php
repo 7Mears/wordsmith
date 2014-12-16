@@ -21,11 +21,12 @@
   <div id="page" class="hfeed site">
       <header class="nav-header">
         <div class="nav-logo">
-          <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+          <h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
         </div>
 
         <nav>
           <ul class="nav-secondary-nav">
+            <li><a href="#0">Secondary Nav</a></li>
             <li><a href="#0">Search</a></li>
           </ul>
         </nav> <!-- /secondary nav -->

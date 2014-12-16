@@ -191,6 +191,9 @@ a,
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   left: .875em; }
+  .nav-logo h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; }
   .nav-logo img {
     display: block; }
   @media only screen and (min-width: 768px) {
@@ -215,7 +218,7 @@ a,
   .nav-secondary-nav a {
     display: inline-block;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 300; }
   @media only screen and (min-width: 768px) {
     .nav-secondary-nav {
       display: block; } }
@@ -229,7 +232,8 @@ a,
   background-color: #304047; }
   .nav-primary-nav-trigger .nav-menu-text {
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     color: #F2F3F8;
     /* hide the text on small devices */
     display: none; }
@@ -347,6 +351,9 @@ a,
     margin: .2em 0;
     text-transform: capitalize; }
   .nav-primary-nav a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
     display: inline-block;
     padding: .4em 1em;
     border-radius: 0.25em;
@@ -402,7 +409,7 @@ a,
 
 /* Front-page
 * ------------------------------------------------ */
-#homeHero {
+#homeDescription {
   background: #263238;
   color: #F2F3F8; }
 
@@ -414,7 +421,15 @@ a,
   padding-top: 150px;
   padding-bottom: 100px; }
 
+.homeWelcome {
+  text-align: center;
+  padding: 50px 25px; }
+
 /* Footer
 * ------------------------------------------------ */
+.site-footer {
+  background: #263238;
+  color: #F2F3F8;
+  padding: 25px 0; }
 
 /*# sourceMappingURL=style.css.map */
