@@ -1,9 +1,9 @@
-.site-footer {
+#site-footer {
   background: $background-alt;
   color: $textColor-alt;
-  padding: $pad 0;
+  padding: $gutter 0;
 }
 
-.site-info {
-
+.footer-content {
+  @include span-columns(10);
 }

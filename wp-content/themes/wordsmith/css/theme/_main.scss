@@ -14,10 +14,16 @@ a:hover {
   color: $linkColor-hover;
 }
 
+.alt-colors {
+  background: $background-alt;
+  color: $textColor-alt;
+}
+
 // Content Wrapper
-.wrap {
-  width: $L;
-  margin: 0 auto;
+.wrapper,
+.home-post,
+.site-footer {
+  @include outer-container;
 }
 
 // Transitions

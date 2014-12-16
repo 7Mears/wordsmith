@@ -1,0 +1,36 @@
+.entry-header {
+  padding-top: ($column + 50px);
+  padding-bottom: $column;
+  text-align: center;
+}
+
+.wrap-post {
+  @include outer-container;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .post {
+    @include span-columns(6);
+    @include shift(2);
+  }
+
+  .alignright {
+    margin-right: -34.78261%;
+    float: right;
+    padding: $gutter;
+
+  }
+
+  .alignleft {
+    @include shift(-2 of 6);
+    float: left;
+    padding: $gutter;
+  }
+
+  p {
+    padding-bottom: 2em;
+  }
+}

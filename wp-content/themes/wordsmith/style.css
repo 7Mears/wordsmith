@@ -1,3 +1,17 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -108,9 +122,18 @@ a:visited {
 a:hover {
   color: #FFF0A5; }
 
-.wrap {
-  width: 1170px;
-  margin: 0 auto; }
+.alt-colors {
+  background: #263238;
+  color: #F2F3F8; }
+
+.wrapper,
+.home-post,
+.site-footer {
+  content: "";
+  display: table;
+  max-width: 73.125em;
+  margin-left: auto;
+  margin-right: auto; }
 
 a,
 .button {
@@ -131,6 +154,9 @@ a,
 .nav-primary-nav a:hover,
 .nav-secondary-nav a:hover {
   color: #FFF0A5; }
+
+.single-post .nav-header {
+  background: #263238; }
 
 .nav-header {
   position: absolute;
@@ -409,27 +435,104 @@ a,
 
 /* Front-page
 * ------------------------------------------------ */
-#homeDescription {
-  background: #263238;
-  color: #F2F3F8; }
-
-.site-description {
-  background: url("/Wordsmith/wp-content/themes/wordsmith/images/lake.jpg");
+.description {
+  background: url("/Wordsmith/wp-content/themes/wordsmith/images/wall.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 100px; }
+  padding-top: 140px;
+  padding-bottom: 90px; }
 
-.homeWelcome {
-  text-align: center;
-  padding: 50px 25px; }
+.welcome {
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 79.48718%;
+  margin-left: 10.25641%;
+  padding-top: 90px;
+  text-align: center; }
+  .welcome:last-child {
+    margin-right: 0; }
+
+.post-content {
+  padding: 90px 0; }
+  .post-content img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; }
+  .post-content .post-img {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 17.94872%; }
+    .post-content .post-img:last-child {
+      margin-right: 0; }
+  .post-content h3 {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 17.94872%; }
+    .post-content h3:last-child {
+      margin-right: 0; }
+  .post-content p {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 58.97436%; }
+    .post-content p:last-child {
+      margin-right: 0; }
+  .post-content h3, .post-content p, .post-content .post-img {
+    border-top: 1px solid #687074;
+    padding-top: 30px; }
 
 /* Footer
 * ------------------------------------------------ */
-.site-footer {
+#site-footer {
   background: #263238;
   color: #F2F3F8;
-  padding: 25px 0; }
+  padding: 30px 0; }
+
+.footer-content {
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  .footer-content:last-child {
+    margin-right: 0; }
+
+/* Single page
+* ------------------------------------------------ */
+.entry-header {
+  padding-top: 140px;
+  padding-bottom: 90px;
+  text-align: center; }
+
+.wrap-post {
+  content: "";
+  display: table;
+  max-width: 73.125em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap-post img {
+    height: 100%;
+    width: 100%; }
+  .wrap-post .post {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 58.97436%;
+    margin-left: 20.51282%; }
+    .wrap-post .post:last-child {
+      margin-right: 0; }
+  .wrap-post .alignright {
+    margin-right: -34.78261%;
+    float: right;
+    padding: 30px; }
+  .wrap-post .alignleft {
+    margin-left: -34.78261%;
+    float: left;
+    padding: 30px; }
+  .wrap-post p {
+    padding-bottom: 2em; }
 
 /*# sourceMappingURL=style.css.map */

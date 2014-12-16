@@ -18,7 +18,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div id="page" class="hfeed site">
+  <div id="page">
       <header class="nav-header">
         <div class="nav-logo">
           <h4><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
