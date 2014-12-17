@@ -27,7 +27,7 @@
   .alignleft {
     @include shift(-2 of 6);
     float: left;
-    padding: $gutter;
+    padding-right: $gutter;
   }
 
   p {

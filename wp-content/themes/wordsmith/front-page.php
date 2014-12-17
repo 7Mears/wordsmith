@@ -20,25 +20,24 @@ get_header(); ?>
 </section><!-- /welcome -->
 
 <section id="home-post">
-  <div class="home-post">
-    <?php $posts = get_posts( "numberposts=3" ); ?>
-    <?php if( $posts ) : ?>
-    <?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
+<?php $posts = get_posts( "numberposts=3" ); ?>
+<?php if( $posts ) : ?>
+<?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
 
-    <div class="home-post">
-      <div class="post-content">
-        <div class="post-img">
-          <?php the_post_thumbnail(); ?>
-        </div>
-        <h3><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h3>
-        <?php the_excerpt(); ?>
-      </div>
-    </div><!-- /post -->
+  <div class="home-post wrapper">
+    <div class="post-img">
+      <?php the_post_thumbnail(); ?>
+    </div>
 
-  </div>
-</section><!-- /posts -->
+    <div class"post-content">
+      <h4><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h4>
+      <?php the_excerpt(); ?>
+    </div>
+  </div><!-- /post -->
+
 
 <?php endforeach; ?>
 <?php endif; ?>
 
+</section><!-- /posts -->
 <?php get_footer(); ?>

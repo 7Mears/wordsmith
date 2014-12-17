@@ -69,7 +69,6 @@
   left: .875em;
 
   h4 {
-    font-family: $font-secondary;
     font-weight: 400;
   }
 
@@ -115,11 +114,15 @@
 
   .nav-menu-text {
     text-transform: uppercase;
-    font-family: $font-secondary;
     font-weight: 400;
     color: $textColor-alt;
+    margin-left: -5px;
     /* hide the text on small devices */
     display: none;
+
+    &:hover {
+      color: $linkColor-hover;
+    }
   }
 
   .nav-menu-icon {
@@ -227,7 +230,6 @@
   a {
     font-size: 20px;
     font-weight: 400;
-    font-family: $font-secondary;
 
     display: inline-block;
     padding: .4em 1em;

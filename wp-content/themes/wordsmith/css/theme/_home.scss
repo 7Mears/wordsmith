@@ -12,35 +12,29 @@
 .welcome {
   @include span-columns(8);
   @include shift(1);
-  padding-top: $column;
+  padding: $column 0;
   text-align: center;
 }
 
-.post-content {
-  padding: $column 0;
+.home-post {
+  padding: $gutter 0;
+
+  .post-img {
+    @include span-columns(4);
+  }
+
+  .post-content {
+    @include span-columns(6);
+  }
+
+  .post-img,
+  .post-content {
+    border-top: 1px solid $grey;
+  }
 
   img {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
-
   }
 
-  .post-img {
-    @include span-columns(2 of 10);
-  }
-
-  h3 {
-    @include span-columns(2 of 10);
-  }
-
-  p {
-    @include span-columns(6 of 10);
-    // @include shift(1);
-  }
-
-  h3, p, .post-img {
-    border-top: 1px solid $grey;
-    padding-top: $gutter;
-  }
 }
