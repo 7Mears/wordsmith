@@ -1,11 +1,11 @@
 .description {
-  background: url('/Wordsmith/wp-content/themes/wordsmith/images/wall.jpg');
+  background: url('/Wordsmith/wp-content/themes/wordsmith/images/books.jpg');
   background-size: cover;
   background-attachment: fixed;
 
   text-align: center;
-  padding-top: ($column + 50px);
-  padding-bottom: $column;
+  padding-top: 250px;
+  padding-bottom: 200px;
 }
 
 
@@ -18,18 +18,34 @@
 
 .home-post {
   padding: $gutter 0;
+  @include span-columns(10);
 
-  .post-img {
-    @include span-columns(4);
+  .post-title {
+    @include span-columns(3);
   }
 
-  .post-content {
-    @include span-columns(6);
+  .post-info {
+    @include span-columns(2);
+    font-size: 12px;
+
+    p {
+      padding-bottom: 15px;
+    }
+
+    span {
+      font-style: italic;
+    }
   }
 
-  .post-img,
-  .post-content {
+  #post-content {
+    @include span-columns(5);
+  }
+
+  .post-title,
+  .post-info,
+  #post-content {
     border-top: 1px solid $grey;
+    padding-top: $gutter;
   }
 
   img {

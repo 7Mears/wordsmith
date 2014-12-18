@@ -19,18 +19,22 @@ get_header(); ?>
   </div>
 </section><!-- /welcome -->
 
-<section id="home-post">
+<section id="home-post" class="wrapper">
 <?php $posts = get_posts( "numberposts=3" ); ?>
 <?php if( $posts ) : ?>
 <?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
 
-  <div class="home-post wrapper">
-    <div class="post-img">
-      <?php the_post_thumbnail(); ?>
+  <div class="home-post">
+    <div class="post-title">
+      <h4><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h4>
     </div>
 
-    <div class"post-content">
-      <h4><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h4>
+    <div class="post-info">
+      <p>Date<br /><span><?php the_date(); ?></span></p>
+      <p>Category<br /><span><?php the_category( ', ' ); ?></span></p>
+    </div>
+
+    <div id="post-content">
       <?php the_excerpt(); ?>
     </div>
   </div><!-- /post -->

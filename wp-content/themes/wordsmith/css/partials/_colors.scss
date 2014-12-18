@@ -2,7 +2,7 @@ $white: #F2F3F8;
 $off-white: #FDFFF7;
 $grey: #687074;
 $yellow: #FFF0A5;
-
+$blue: #6987C9;
 $black: #263238;
 $lightBlack: #384248;
 $teal: #70B7BA;
@@ -12,9 +12,9 @@ $textColor: $black;
 $textColor-alt: $white;
 
 $linkColor: $lightBlack;
-$linkColor-hover: $yellow;
+$linkColor-hover: $blue;
 $linkColor-alt: $lightBlack;
-$linkColor-hover--alt: $yellow;
+$linkColor-hover--alt: $blue;
 
 // Background
 $background: $white;
@@ -26,6 +26,6 @@ $buttonBg: $grey;
 $buttonBg-hover: $black;
 
 $buttonColor: $white;
-$buttonColor-hover: $yellow;
+$buttonColor-hover: $blue;
 
 $borderColor: $grey;

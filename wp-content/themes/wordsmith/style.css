@@ -99,6 +99,53 @@ h5 {
 h6 {
   font-size: 20px; }
 
+p {
+  margin-bottom: 1.5em; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+abbr, acronym {
+  cursor: help; }
+
+mark, ins {
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
 .button {
   background: #687074;
   color: #F2F3F8;
@@ -106,7 +153,7 @@ h6 {
   border-radius: 10px; }
   .button:hover {
     background: #263238;
-    color: #FFF0A5; }
+    color: #6987C9; }
 
 /* Main
 * ------------------------------------------------ */
@@ -120,7 +167,7 @@ a:visited {
   text-decoration: none; }
 
 a:hover {
-  color: #FFF0A5; }
+  color: #6987C9; }
 
 .alt-colors {
   background: #263238;
@@ -152,7 +199,7 @@ a,
 .nav-logo a:hover,
 .nav-primary-nav a:hover,
 .nav-secondary-nav a:hover {
-  color: #FFF0A5; }
+  color: #6987C9; }
 
 .single-post .nav-header {
   background: #263238; }
@@ -262,7 +309,7 @@ a,
     /* hide the text on small devices */
     display: none; }
     .nav-primary-nav-trigger .nav-menu-text:hover {
-      color: #FFF0A5; }
+      color: #6987C9; }
   .nav-primary-nav-trigger .nav-menu-icon {
     /* this span is the central line of the menu icon */
     display: inline-block;
@@ -386,7 +433,7 @@ a,
     -moz-transition: background 0.2s;
     transition: background 0.2s; }
     .no-touch .nav-primary-nav a:hover {
-      background-color: #FFF0A5; }
+      background-color: #6987C9; }
   .nav-primary-nav .nav-label {
     color: #455b66;
     text-transform: uppercase;
@@ -435,12 +482,12 @@ a,
 /* Front-page
 * ------------------------------------------------ */
 .description {
-  background: url("/Wordsmith/wp-content/themes/wordsmith/images/wall.jpg");
+  background: url("/Wordsmith/wp-content/themes/wordsmith/images/books.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  padding-top: 140px;
-  padding-bottom: 90px; }
+  padding-top: 250px;
+  padding-bottom: 200px; }
 
 .welcome {
   float: left;
@@ -454,24 +501,44 @@ a,
     margin-right: 0; }
 
 .home-post {
-  padding: 30px 0; }
-  .home-post .post-img {
+  padding: 30px 0;
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  .home-post:last-child {
+    margin-right: 0; }
+  .home-post .post-title {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 38.46154%; }
-    .home-post .post-img:last-child {
+    width: 28.20513%; }
+    .home-post .post-title:last-child {
       margin-right: 0; }
-  .home-post .post-content {
+  .home-post .post-info {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 58.97436%; }
-    .home-post .post-content:last-child {
+    width: 17.94872%;
+    font-size: 12px; }
+    .home-post .post-info:last-child {
       margin-right: 0; }
-  .home-post .post-img,
-  .home-post .post-content {
-    border-top: 1px solid #687074; }
+    .home-post .post-info p {
+      padding-bottom: 15px; }
+    .home-post .post-info span {
+      font-style: italic; }
+  .home-post #post-content {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 48.71795%; }
+    .home-post #post-content:last-child {
+      margin-right: 0; }
+  .home-post .post-title,
+  .home-post .post-info,
+  .home-post #post-content {
+    border-top: 1px solid #687074;
+    padding-top: 30px; }
   .home-post img {
     height: 100%;
     width: 100%; }
@@ -493,37 +560,48 @@ a,
 
 /* Single page
 * ------------------------------------------------ */
-.entry-header {
-  padding-top: 140px;
-  padding-bottom: 90px;
-  text-align: center; }
+.type-post {
+  height: 100%; }
 
-.wrap-post {
+.post-bg {
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.post-bg-wrapper {
+  position: relative;
+  height: 70%;
+  width: 100%; }
+
+.post-content-area {
   content: "";
   display: table;
   max-width: 73.125em;
   margin-left: auto;
   margin-right: auto; }
-  .wrap-post img {
-    height: 100%;
-    width: 100%; }
-  .wrap-post .post {
+  .post-content-area img {
+    height: 85%;
+    width: 85%; }
+  .post-content-area .post {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 58.97436%;
     margin-left: 20.51282%; }
-    .wrap-post .post:last-child {
+    .post-content-area .post:last-child {
       margin-right: 0; }
-  .wrap-post .alignright {
+  .post-content-area .post-header {
+    text-align: center;
+    padding: 60px 0; }
+  .post-content-area .alignright {
     margin-right: -34.78261%;
     float: right;
-    padding: 30px; }
-  .wrap-post .alignleft {
+    padding: 60px; }
+  .post-content-area .alignleft {
     margin-left: -34.78261%;
     float: left;
-    padding-right: 30px; }
-  .wrap-post p {
-    padding-bottom: 2em; }
+    padding: 60px; }
 
 /*# sourceMappingURL=style.css.map */
