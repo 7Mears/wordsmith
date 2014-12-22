@@ -93,8 +93,22 @@ function wordsmith_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+
+//Footer
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'wordsmith' ),
+		'id'            => 'footer-1',
+		'description'   => 'Footer Widget',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+		) );
+
+
 }
 add_action( 'widgets_init', 'wordsmith_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.

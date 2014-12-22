@@ -12,9 +12,11 @@
 		<div class="site-footer">
 			<div class="footer-content">
 
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'wordsmith' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'wordsmith' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'wordsmith' ), 'Wordsmith', '<a href="http://www.endboss.ca" rel="designer">EndBoss</a>' ); ?>
+				<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+					<div class="footer-widget widget-area">
+						<?php dynamic_sidebar( 'footer-1' ); ?>
+					</div><!-- /footer-sidebar -->
+				<?php endif; ?>
 
 			</div><!-- /footer-content -->
 		</div><!-- /site-footer -->
