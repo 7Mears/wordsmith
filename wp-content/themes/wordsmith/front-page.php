@@ -13,11 +13,12 @@ get_header(); ?>
   </div>
 </section><!-- /description -->
 
-<section id="welcome" class="wrapper">
-  <div class="welcome">
-    <h5>Naturally engaging advertorials. Sharp and insightful editorials. Attention-grabbing copy for brochures. Concise website content. Engaging blog posts. Quality photographs. I can do it all, and more.</h5>
-  </div>
-</section><!-- /welcome -->
+<?php if ( is_active_sidebar( 'welcome' ) ) : ?>
+  <section id="welcome" class="wrapper">
+    <?php dynamic_sidebar( 'welcome' ); ?>
+  </section><!-- /welcome -->
+<?php endif; ?>
+
 
 <section id="home-post" class="wrapper">
 <?php $posts = get_posts( "numberposts=3" ); ?>

@@ -94,6 +94,17 @@ function wordsmith_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 
+//Front-Page Welcome
+register_sidebar( array(
+	'name'          => __( 'Welcome', 'wordsmith' ),
+	'id'            => 'welcome',
+	'description'   => 'Welcome message on the front page',
+	'before_widget' => '<div class="welcome widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h5>',
+	'after_title'   => '</h5>',
+	) );
+
 //Footer
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'wordsmith' ),
