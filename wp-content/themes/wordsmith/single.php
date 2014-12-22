@@ -9,7 +9,6 @@ get_header(); ?>
 
 <!-- Start the loop -->
 <?php while ( have_posts() ) : the_post(); ?>
-	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 		<!-- Grab the featured image and set it as a class -->
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -23,7 +22,7 @@ get_header(); ?>
 				<div class="singlePost-bg" style="background-image: url('<?php echo $image; ?>')" >
 				</div><!-- /featured image -->
 		</div>
-
+	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		<div id="primary" class="singlePost-content-area">
 				<div class="singlePost">
 

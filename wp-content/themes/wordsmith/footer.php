@@ -7,6 +7,7 @@
  * @package Wordsmith
  */
 ?>
+
 	<footer id="site-footer">
 		<div class="site-footer">
 			<div class="footer-content">

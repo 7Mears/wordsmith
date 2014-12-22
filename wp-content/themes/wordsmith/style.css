@@ -560,9 +560,6 @@ a,
 
 /* Single page
 * ------------------------------------------------ */
-.post {
-  height: 100%; }
-
 .singlePost-bg {
   background-size: cover;
   background-attachment: fixed;
