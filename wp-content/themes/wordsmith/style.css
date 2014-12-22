@@ -560,46 +560,46 @@ a,
 
 /* Single page
 * ------------------------------------------------ */
-.type-post {
+.post {
   height: 100%; }
 
-.post-bg {
+.singlePost-bg {
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
   height: 100%;
   width: 100%; }
 
-.post-bg-wrapper {
+.singlePost-bg-wrapper {
   position: relative;
-  height: 70%;
+  height: 80%;
   width: 100%; }
 
-.post-content-area {
+.singlePost-content-area {
   content: "";
   display: table;
   max-width: 73.125em;
   margin-left: auto;
   margin-right: auto; }
-  .post-content-area img {
+  .singlePost-content-area img {
     height: 85%;
     width: 85%; }
-  .post-content-area .post {
+  .singlePost-content-area .singlePost {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 58.97436%;
     margin-left: 20.51282%; }
-    .post-content-area .post:last-child {
+    .singlePost-content-area .singlePost:last-child {
       margin-right: 0; }
-  .post-content-area .post-header {
+  .singlePost-content-area .singlePost-header {
     text-align: center;
     padding: 60px 0; }
-  .post-content-area .alignright {
+  .singlePost-content-area .alignright {
     margin-right: -34.78261%;
     float: right;
     padding: 60px; }
-  .post-content-area .alignleft {
+  .singlePost-content-area .alignleft {
     margin-left: -34.78261%;
     float: left;
     padding: 60px; }

@@ -18,21 +18,24 @@ get_header(); ?>
 		<?php else :
 			$image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
 		<?php endif; ?>
-<div class="post-bg-wrapper">
-		<div class="post-bg" style="background-image: url('<?php echo $image; ?>')" >
-		</div><!-- /featured image -->
-</div>
-			<div id="primary" class="post-content-area">
-					<div class="post">
-						<div class ="post-header">
-							<h2><?php the_title(); ?></h2>
-							<small>By <?php the_author() ?>, on <?php the_time('F jS, Y') ?> </small>
-						</div>
 
-						<?php the_content(); ?>
+		<div class="singlePost-bg-wrapper">
+				<div class="singlePost-bg" style="background-image: url('<?php echo $image; ?>')" >
+				</div><!-- /featured image -->
+		</div>
 
+		<div id="primary" class="singlePost-content-area">
+				<div class="singlePost">
+
+					<div class ="singlePost-header">
+						<h2><?php the_title(); ?></h2>
+						<small>By <?php the_author() ?>, on <?php the_time('F jS, Y') ?> </small>
 					</div>
+
+					<?php the_content(); ?>
+
 				</div>
+			</div>
 				<?php
 				// If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || get_comments_number() ) :

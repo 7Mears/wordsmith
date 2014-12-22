@@ -1,6 +1,8 @@
-.type-post { height: 100%; }
+.post {
+  height: 100%;
+}
 
-.post-bg {
+.singlePost-bg {
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -8,13 +10,14 @@
   width: 100%;
 }
 
-.post-bg-wrapper {
+
+.singlePost-bg-wrapper {
   position: relative;
-  height: 70%;
+  height: 80%;
   width: 100%;
 }
 
-.post-content-area {
+.singlePost-content-area {
   @include outer-container;
 
   img {
@@ -22,12 +25,12 @@
     width: 85%;
   }
 
-  .post {
+  .singlePost {
     @include span-columns(6);
     @include shift(2);
   }
 
-  .post-header {
+  .singlePost-header {
     text-align: center;
     padding: ($gutter * 2) 0;
   }
