@@ -14,12 +14,12 @@ $visual-grid-color: lightblue !default;
 ///
 /// @type String
 
-$visual-grid-index: back !default;
+$visual-grid-index: front !default;
 
 /// Sets the opacity property of the visual grid. Set with `!global` flag.
 ///
 /// @type Number (unitless)
 
-$visual-grid-opacity: 0.4 !default;
+$visual-grid-opacity: 0.1 !default;
 
 $visual-grid-breakpoints: () !default;

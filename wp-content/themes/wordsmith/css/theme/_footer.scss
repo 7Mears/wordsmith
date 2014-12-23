@@ -1,9 +1,47 @@
 #site-footer {
   background: $background-alt;
-  color: $textColor-alt;
-  padding: $gutter 0;
 }
 
 .footer-content {
   @include span-columns(10);
+  color: $textColor-alt;
+
+  a {
+    color: $linkColor-alt;
+  }
+
+  a:hover {
+    color: $linkColor-hover--alt;
+  }
+
+  .widget-title,
+  p {
+    border-top: 1px solid $lightBlack;
+    padding: $gutter 0 $column 0;
+  }
+
+  .widget-title {
+    font-size: 18px;
+    font-family: $font-secondary;
+    font-weight: 400;
+  }
+
+}
+
+.footer-widget {
+
+  .widget-title {
+    @include span-columns(3 of 10);
+  }
+
+  p {
+    @include span-columns(7 of 10);
+  }
+
+  .footerWidget-split {
+    @include span-columns(3.5 of 10);
+    border-top: 1px solid $lightBlack;
+    padding: $gutter 0 $column 0;
+  }
+
 }

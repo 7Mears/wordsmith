@@ -15,7 +15,7 @@
 				<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 					<div class="footer-widget widget-area">
 						<?php dynamic_sidebar( 'footer-1' ); ?>
-					</div><!-- /footer-sidebar -->
+					</div><!-- /footer-1 -->
 				<?php endif; ?>
 
 			</div><!-- /footer-content -->

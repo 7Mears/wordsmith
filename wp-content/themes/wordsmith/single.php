@@ -14,14 +14,16 @@ get_header(); ?>
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
 			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 			$image = $image[0]; ?>
-		<?php else :
-			$image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; ?>
-		<?php endif; ?>
 
-		<div class="singlePost-bg-wrapper">
+			<div class="singlePost-bg-wrapper">
 				<div class="singlePost-bg" style="background-image: url('<?php echo $image; ?>')" >
 				</div><!-- /featured image -->
-		</div>
+			</div>
+
+		<?php else : ?>
+		<?php endif; ?>
+
+
 	<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		<div id="primary" class="singlePost-content-area">
 				<div class="singlePost">

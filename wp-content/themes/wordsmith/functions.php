@@ -105,17 +105,27 @@ register_sidebar( array(
 	'after_title'   => '</h5>',
 	) );
 
-//Footer
+//Footer 1
 	register_sidebar( array(
-		'name'          => __( 'Footer', 'wordsmith' ),
+		'name'          => __( 'Footer 1', 'wordsmith' ),
 		'id'            => 'footer-1',
-		'description'   => 'Footer Widget',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'description'   => 'This has 3 sections',
+		'before_widget' => '<div id="%1$s" class="footer1-section %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 		) );
 
+//Footer 2
+	register_sidebar( array(
+		'name'          => __( 'Footer 2', 'wordsmith' ),
+		'id'            => 'footer-2',
+		'description'   => 'This is full width',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+		) );
 
 }
 add_action( 'widgets_init', 'wordsmith_widgets_init' );
