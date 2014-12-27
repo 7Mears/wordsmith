@@ -155,6 +155,22 @@ big {
     background: #263238;
     color: #6987C9; }
 
+.more-link {
+  color: #F2F3F8;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  padding: 5px 25px;
+  border: 1px solid #F2F3F8;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: block;
+  float: left;
+  clear: left;
+  text-transform: uppercase; }
+  .more-link:hover {
+    color: #6987C9;
+    border: 1px solid #6987C9; }
+
 /* Main
 * ------------------------------------------------ */
 body {
@@ -482,7 +498,7 @@ a,
 /* Front-page
 * ------------------------------------------------ */
 .description {
-  background: url("/Wordsmith/wp-content/themes/wordsmith/images/books.jpg");
+  background: url("/Wordsmith/wp-content/themes/wordsmith/images/people.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;

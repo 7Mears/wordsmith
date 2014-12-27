@@ -28,7 +28,7 @@
             <li><a href="#0">Secondary Nav</a></li>
             <li><a href="#0">Search</a></li>
           </ul>
-        </nav> <!-- /secondary nav --> -->
+        </nav> <!-- /secondary nav -->
 
         <a class="nav-primary-nav-trigger" href="#0">
           <span class="nav-menu-text">Menu</span><span class="nav-menu-icon"></span>

@@ -9,3 +9,22 @@
     color: $buttonColor-hover;
   }
 }
+
+.more-link {
+  color: $buttonColor;
+  font-family: $font-secondary;
+  font-size: 10px;
+  padding: 5px 25px;
+  border: 1px solid $buttonColor;
+  border-radius: $rad;
+  margin-top: $gutter;
+  display: block;
+  float: left;
+  clear: left;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $buttonColor-hover;
+    border: 1px solid $buttonColor-hover;
+  }
+}
