@@ -45,4 +45,5 @@ get_header(); ?>
 <?php endif; ?>
 
 </section><!-- /posts -->
+
 <?php get_footer(); ?>

@@ -105,6 +105,17 @@ register_sidebar( array(
 	'after_title'   => '</h5>',
 	) );
 
+//Front-Page Hero-Secondary
+	register_sidebar( array(
+		'name'          => __( 'Hero Secondary', 'wordsmith' ),
+		'id'            => 'hero-secondary',
+		'description'   => 'Secondary hero, above footer',
+		'before_widget' => '<div class="hero-secondary widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5>',
+		'after_title'   => '</h5>',
+		) );
+
 //Footer 1
 	register_sidebar( array(
 		'name'          => __( 'Footer 1', 'wordsmith' ),
@@ -253,3 +264,13 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
 
 // Display the XHTML generator that is generated on the wp_head hook, WP ver
 remove_action( 'wp_head', 'wp_generator' );
+
+
+
+// Changing excerpt more
+
+function new_excerpt_more($more) {
+	return ' ... ' . '<a href="'. get_permalink($post->ID) . '" class="more-link">Read more</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');

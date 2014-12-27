@@ -9,6 +9,13 @@
 ?>
 
 	<footer id="site-footer">
+
+		<?php if ( is_active_sidebar( 'hero-secondary' ) ) : ?>
+			<section id="hero-secondary" class="wrapper">
+				<?php dynamic_sidebar( 'hero-secondary' ); ?>
+			</section><!-- /hero-secondary -->
+		<?php endif; ?>
+
 		<div class="site-footer">
 			<div class="footer-content">
 

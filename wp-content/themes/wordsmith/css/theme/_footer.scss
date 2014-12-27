@@ -1,9 +1,5 @@
 #site-footer {
   background: $background-alt;
-}
-
-.footer-content {
-  @include span-columns(10);
   color: $textColor-alt;
 
   a {
@@ -13,6 +9,10 @@
   a:hover {
     color: $linkColor-hover--alt;
   }
+}
+
+.footer-content {
+  @include span-columns(10);
 
   .widget-title,
   p {
@@ -25,7 +25,6 @@
     font-family: $font-secondary;
     font-weight: 400;
   }
-
 }
 
 .footer-widget {
@@ -44,4 +43,10 @@
     padding: $gutter 0 $column 0;
   }
 
+}
+
+#hero-secondary {
+  background: rgba(255,255,255,0.1);
+  width: 100%;
+  padding: $column 0;
 }
