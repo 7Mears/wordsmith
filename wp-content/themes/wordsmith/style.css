@@ -503,7 +503,7 @@ a,
 
 /* Front-page
 * ------------------------------------------------ */
-.description {
+.frontpageTop {
   background: url("/Wordsmith/wp-content/themes/wordsmith/images/people.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -511,7 +511,7 @@ a,
   padding-top: 250px;
   padding-bottom: 200px; }
 
-.welcome {
+.frontpageMiddle {
   float: left;
   display: block;
   margin-right: 2.5641%;
@@ -519,49 +519,49 @@ a,
   margin-left: 10.25641%;
   padding: 90px 0;
   text-align: center; }
-  .welcome:last-child {
+  .frontpageMiddle:last-child {
     margin-right: 0; }
 
-.home-post {
+.frontpageBottom {
   padding: 30px 0;
   float: left;
   display: block;
   margin-right: 2.5641%;
   width: 100%; }
-  .home-post:last-child {
+  .frontpageBottom:last-child {
     margin-right: 0; }
-  .home-post .post-title {
+  .frontpageBottom .post-title {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 28.20513%; }
-    .home-post .post-title:last-child {
+    .frontpageBottom .post-title:last-child {
       margin-right: 0; }
-  .home-post .post-info {
+  .frontpageBottom .post-info {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 17.94872%;
     font-size: 12px; }
-    .home-post .post-info:last-child {
+    .frontpageBottom .post-info:last-child {
       margin-right: 0; }
-    .home-post .post-info p {
+    .frontpageBottom .post-info p {
       padding-bottom: 15px; }
-    .home-post .post-info span {
+    .frontpageBottom .post-info span {
       font-style: italic; }
-  .home-post #post-content {
+  .frontpageBottom #post-content {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 48.71795%; }
-    .home-post #post-content:last-child {
+    .frontpageBottom #post-content:last-child {
       margin-right: 0; }
-  .home-post .post-title,
-  .home-post .post-info,
-  .home-post #post-content {
+  .frontpageBottom .post-title,
+  .frontpageBottom .post-info,
+  .frontpageBottom #post-content {
     border-top: 1px solid #687074;
     padding-top: 30px; }
-  .home-post img {
+  .frontpageBottom img {
     height: 100%;
     width: 100%; }
 
@@ -614,11 +614,6 @@ a,
   padding: 30px 0 90px 0; }
   .footer-widget .footerWidget-split:last-child {
     margin-right: 0; }
-
-#hero-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  padding: 90px 0; }
 
 /* Single page
 * ------------------------------------------------ */

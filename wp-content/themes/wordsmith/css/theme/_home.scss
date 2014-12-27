@@ -1,4 +1,4 @@
-.description {
+.frontpageTop {
   background: url('/Wordsmith/wp-content/themes/wordsmith/images/people.jpg');
   background-size: cover;
   background-attachment: fixed;
@@ -9,14 +9,14 @@
 }
 
 
-.welcome {
+.frontpageMiddle {
   @include span-columns(8);
   @include shift(1);
   padding: $column 0;
   text-align: center;
 }
 
-.home-post {
+.frontpageBottom {
   padding: $gutter 0;
   @include span-columns(10);
 

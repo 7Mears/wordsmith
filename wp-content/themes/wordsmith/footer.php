@@ -10,19 +10,14 @@
 
 	<footer id="site-footer">
 
-		<?php if ( is_active_sidebar( 'hero-secondary' ) ) : ?>
-			<section id="hero-secondary" class="wrapper">
-				<?php dynamic_sidebar( 'hero-secondary' ); ?>
-			</section><!-- /hero-secondary -->
-		<?php endif; ?>
 
 		<div class="site-footer">
 			<div class="footer-content">
 
-				<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+				<?php if ( is_active_sidebar( 'footer' ) ) : ?>
 					<div class="footer-widget widget-area">
-						<?php dynamic_sidebar( 'footer-1' ); ?>
-					</div><!-- /footer-1 -->
+						<?php dynamic_sidebar( 'footer' ); ?>
+					</div><!-- /footer -->
 				<?php endif; ?>
 
 			</div><!-- /footer-content -->

@@ -94,45 +94,34 @@ function wordsmith_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 
-//Front-Page Welcome
-register_sidebar( array(
-	'name'          => __( 'Welcome', 'wordsmith' ),
-	'id'            => 'welcome',
-	'description'   => 'Welcome message on the front page',
-	'before_widget' => '<div class="welcome widget %2$s">',
-	'after_widget'  => '</div>',
-	'before_title'  => '<h5>',
-	'after_title'   => '</h5>',
-	) );
-
-//Front-Page Hero-Secondary
+//Front-Page Top
 	register_sidebar( array(
-		'name'          => __( 'Hero Secondary', 'wordsmith' ),
-		'id'            => 'hero-secondary',
-		'description'   => 'Secondary hero, above footer',
-		'before_widget' => '<div class="hero-secondary widget %2$s">',
+		'name'          => __( 'Front-Page Top', 'wordsmith' ),
+		'id'            => 'frontpagetop',
+		'description'   => 'This section is displayed at the top of the front page.',
+		'before_widget' => '<div class="frontpageTop widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h5>',
 		'after_title'   => '</h5>',
 		) );
 
-//Footer 1
-	register_sidebar( array(
-		'name'          => __( 'Footer 1', 'wordsmith' ),
-		'id'            => 'footer-1',
-		'description'   => 'This has 3 sections',
-		'before_widget' => '<div id="%1$s" class="footer1-section %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-		) );
+//Front-Page Middle
+register_sidebar( array(
+	'name'          => __( 'Front-Page Middle', 'wordsmith' ),
+	'id'            => 'frontpagemiddle',
+	'description'   => 'This section is displayed at the middle of the front page.',
+	'before_widget' => '<div class="frontpageMiddle widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h5>',
+	'after_title'   => '</h5>',
+	) );
 
-//Footer 2
+//Footer
 	register_sidebar( array(
-		'name'          => __( 'Footer 2', 'wordsmith' ),
-		'id'            => 'footer-2',
-		'description'   => 'This is full width',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'name'          => __( 'Footer', 'wordsmith' ),
+		'id'            => 'footer',
+		'description'   => 'This section is displayed at the bottom of every page and post.',
+		'before_widget' => '<div id="%1$s" class="footer-section %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
@@ -191,6 +180,17 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+// Changing excerpt more link
+
+function new_excerpt_more($more) {
+	return ' ... ' . '<a href="'. get_permalink($post->ID) . '" class="more-link">Read more</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 
 /**
@@ -264,13 +264,3 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
 
 // Display the XHTML generator that is generated on the wp_head hook, WP ver
 remove_action( 'wp_head', 'wp_generator' );
-
-
-
-// Changing excerpt more
-
-function new_excerpt_more($more) {
-	return ' ... ' . '<a href="'. get_permalink($post->ID) . '" class="more-link">Read more</a>';
-}
-
-add_filter('excerpt_more', 'new_excerpt_more');

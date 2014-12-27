@@ -1,31 +1,33 @@
 <?php
 /**
-* The homepage.
+* Template Name: Homepage
+* Description: The front page.
 *
 * @package Wordsmith
 */
 
 get_header(); ?>
 
-<section id="description" class="alt-colors">
-  <div class="description">
-    <h2><?php bloginfo( 'description' ); ?></h2>
-  </div>
-</section><!-- /description -->
-
-<?php if ( is_active_sidebar( 'welcome' ) ) : ?>
-  <section id="welcome" class="wrapper">
-    <?php dynamic_sidebar( 'welcome' ); ?>
-  </section><!-- /welcome -->
+<?php if ( is_active_sidebar( 'frontpageTop' ) ) : ?>
+<section id="frontpageTop" class="alt-colors">
+  <?php dynamic_sidebar( 'frontpagetop' ); ?>
+</section>
 <?php endif; ?>
+<!-- /frontpageTop -->
 
+<?php if ( is_active_sidebar( 'frontpageMiddle' ) ) : ?>
+<section id="frontpageMiddle" class="wrapper">
+  <?php dynamic_sidebar( 'frontpagemiddle' ); ?>
+</section>
+<?php endif; ?>
+<!-- /frontpageMiddle -->
 
-<section id="home-post" class="wrapper">
 <?php $posts = get_posts( "numberposts=3" ); ?>
 <?php if( $posts ) : ?>
+<section id="frontpagebottom" class="wrapper">
 <?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
 
-  <div class="home-post">
+  <div class="frontpageBottom">
     <div class="post-title">
       <h4><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h4>
     </div>
@@ -40,10 +42,10 @@ get_header(); ?>
     </div>
   </div><!-- /post -->
 
-
 <?php endforeach; ?>
+</section>
 <?php endif; ?>
+<!-- /frontpageBottom -->
 
-</section><!-- /posts -->
 
 <?php get_footer(); ?>
