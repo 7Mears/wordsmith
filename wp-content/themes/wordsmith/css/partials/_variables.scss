@@ -10,7 +10,7 @@ $M:     768px;
 $L:     1170px;
 
 $mobile: new-breakpoint(max-width 480px);
-$tablet: new-breakpoint(min-width 850px);
+$tablet: new-breakpoint(max-width 850px);
 
 // media queries
 

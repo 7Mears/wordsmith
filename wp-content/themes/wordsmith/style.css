@@ -556,6 +556,25 @@ a,
     width: 48.71795%; }
     .frontpageBottom #post-content:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 850px) {
+      .frontpageBottom #post-content {
+        float: left;
+        display: block;
+        margin-right: 2.5641%;
+        width: 100%; }
+        .frontpageBottom #post-content:last-child {
+          margin-right: 0; } }
+  @media screen and (max-width: 850px) {
+    .frontpageBottom .post-title,
+    .frontpageBottom .post-info {
+      float: left;
+      display: block;
+      margin-right: 2.5641%;
+      width: 48.71795%;
+      margin-right: 0; }
+      .frontpageBottom .post-title:last-child,
+      .frontpageBottom .post-info:last-child {
+        margin-right: 0; } }
   .frontpageBottom .post-title,
   .frontpageBottom .post-info,
   .frontpageBottom #post-content {
@@ -568,17 +587,21 @@ a,
         float: left;
         display: block;
         margin-right: 2.5641%;
-        width: 100%;
-        padding: 0 30px;
-        border: 0; }
+        width: 100%; }
         .frontpageBottom .post-title:last-child,
         .frontpageBottom .post-info:last-child,
         .frontpageBottom #post-content:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 850px) {
+      .frontpageBottom .post-title,
+      .frontpageBottom .post-info,
+      .frontpageBottom #post-content {
+        padding: 0 30px;
+        border: 0; } }
   .frontpageBottom img {
     height: 100%;
     width: 100%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 850px) {
     .frontpageBottom {
       border-top: 1px solid #687074; } }
 
