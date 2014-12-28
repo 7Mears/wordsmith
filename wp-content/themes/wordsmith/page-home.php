@@ -26,7 +26,6 @@ get_header(); ?>
 <?php if( $posts ) : ?>
 <section id="frontpagebottom" class="wrapper">
 <?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
-
   <div class="frontpageBottom">
     <div class="post-title">
       <h4><a href="<?php echo get_permalink($post->ID); ?>" ><?php echo $post->post_title; ?></a></h4>

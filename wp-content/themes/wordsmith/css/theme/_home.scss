@@ -17,6 +17,7 @@
 }
 
 .frontpageBottom {
+
   padding: $gutter 0;
   @include span-columns(10);
 
@@ -46,11 +47,21 @@
   #post-content {
     border-top: 1px solid $grey;
     padding-top: $gutter;
+
+    @include media($mobile) {
+      @include span-columns(10);
+      padding: 0 $gutter;
+      border: 0;
+    }
   }
 
   img {
     height: 100%;
     width: 100%;
+  }
+
+  @include media($mobile) {
+    border-top: 1px solid $grey;
   }
 
 }

@@ -43,4 +43,13 @@
     padding: $gutter 0 $column 0;
   }
 
+  .widget-title,
+  .footerWidget-split,
+  p {
+    @include media($mobile) {
+      @include span-columns(10);
+      padding: $gutter;
+    }
+  }
+
 }

@@ -561,9 +561,26 @@ a,
   .frontpageBottom #post-content {
     border-top: 1px solid #687074;
     padding-top: 30px; }
+    @media screen and (max-width: 480px) {
+      .frontpageBottom .post-title,
+      .frontpageBottom .post-info,
+      .frontpageBottom #post-content {
+        float: left;
+        display: block;
+        margin-right: 2.5641%;
+        width: 100%;
+        padding: 0 30px;
+        border: 0; }
+        .frontpageBottom .post-title:last-child,
+        .frontpageBottom .post-info:last-child,
+        .frontpageBottom #post-content:last-child {
+          margin-right: 0; } }
   .frontpageBottom img {
     height: 100%;
     width: 100%; }
+  @media screen and (max-width: 480px) {
+    .frontpageBottom {
+      border-top: 1px solid #687074; } }
 
 /* Footer
 * ------------------------------------------------ */
@@ -614,6 +631,19 @@ a,
   padding: 30px 0 90px 0; }
   .footer-widget .footerWidget-split:last-child {
     margin-right: 0; }
+@media screen and (max-width: 480px) {
+  .footer-widget .widget-title,
+  .footer-widget .footerWidget-split,
+  .footer-widget p {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 100%;
+    padding: 30px; }
+    .footer-widget .widget-title:last-child,
+    .footer-widget .footerWidget-split:last-child,
+    .footer-widget p:last-child {
+      margin-right: 0; } }
 
 /* Single page
 * ------------------------------------------------ */
