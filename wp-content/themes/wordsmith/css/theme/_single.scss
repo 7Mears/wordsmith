@@ -24,6 +24,12 @@
   .singlePost {
     @include span-columns(6);
     @include shift(2);
+
+    @include media($tablet) {
+      @include span-columns(10);
+      @include shift(0);
+      padding: 0 $gutter;
+    }
   }
 
   .singlePost-header {
@@ -36,12 +42,30 @@
     float: right;
     padding: ($gutter * 2);
 
+    @include media($tablet) {
+      margin-right: 0;
+    }
+
+    @include media($mobile) {
+      padding: $gutter 0;
+      width: 100%;
+    }
+
   }
 
   .alignleft {
     @include shift(-2 of 6);
     float: left;
     padding: ($gutter * 2);
+
+    @include media($tablet) {
+      @include shift(0);
+    }
+
+    @include media($mobile) {
+      padding: $gutter 0;
+      width: 100%;
+    }
   }
 
 }
